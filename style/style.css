@@ -13,9 +13,9 @@ body {
     color: white;
     font-family: 'Chivo', sans-serif;
     font-weight: 300;
+    min-width: 100%;
 }
 .my-body {
-    min-width: 100vw;
     min-height: 100vh;
     background: rgba(18, 23, 37, 0.9);
 }
@@ -110,6 +110,14 @@ section#body p.desc {
     background: #B3FFE2;
 }
 
+.form span#error-msg {
+    margin-left: 32px;
+    margin-top: 8px;
+    color: #FB3E3E;
+    font-weight: 700;
+    font-size: 12px;
+}
+
 footer {
     margin-top: 153px;
     margin-left: 30px;
@@ -168,7 +176,7 @@ footer img.svg-dots {
 
     /* FORM */
     .bottom-body form#form-mail {
-        margin-bottom: 64px;
+        margin-bottom: 54px;
     }
 
     .bottom-body .form-group {
