@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+span.green-text { color: #54E6AF; }
+
+body {
+    background: url('../assets/mobile/image-host.jpg') no-repeat top right, #121725 ;
+    min-height: 100vh;
+    color: white;
+    font-family: 'Chivo', sans-serif;
+    font-weight: 300;
+}
+.my-body {
+    min-width: 100vw;
+    min-height: 100vh;
+    background: rgba(18, 23, 37, 0.9);
+}
+
+header {
+    padding-top: 62px;
+    display: flex;
+    justify-content: center;
+}
+
+section#body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 57px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+section#body h1 {
+    font-size: 26px;
+    line-height: 38px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+section#body p.desc {
+    font-size: 15px;
+    line-height: 25px;
+    color: #C2CBE5;
+    width: 327px;
+}
+
+.bottom-body {
+    margin-top: 33px;
+    width: 315px;
+}
+
+.img-svg {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-svg img {
+    filter: invert(43%) sepia(11%) saturate(1304%) hue-rotate(188deg) brightness(86%) contrast(86%);
+}
+
+.img-svg .spotify {
+    width: 56px;
+    height: 17px;
+}
+
+.img-svg .apple {
+    width: 45px;
+    height: 17px;
+}
+
+.img-svg .google {
+    width: 73px;
+    height: 11px;
+}
+
+.img-svg .pocket {
+    width: 77px;
+    height: 15px;
+}
+/* FORM */
+.form {
+    margin-top: 48px;
+}
+.form input[type=text], .form input[type=submit] {
+    width: 100%;
+    border: none;
+    height: 46px;
+    border-radius: 23px;
+    font-family: 'Chivo', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}
+.form input[type=text] {
+    background: #2C344B;
+    padding-left: 32px;
+    color: #FFF;margin-bottom: 16px;
+}
+.form input[type=text]:active, .form input[type=text]:focus {
+    color: #FFF;
+}
+.form input[type=submit] {
+    background: #54E6AF;
+}
+.form input[type=submit]:hover {
+    background: #B3FFE2;
+}
+
+footer {
+    margin-top: 153px;
+    margin-left: 30px;
+}
+
+footer img.svg-dots {
+    display: none;
+}
+
+
+/* ######################################## */
+/*                  Tablet                  */
+/* ######################################## */
+@media (min-width: 768px) {
+    body {
+        background: url('../assets/tablet/image-host.jpg') no-repeat top right, #121725 ;
+    }
+    .my-body {
+        background: none;
+    }
+
+    header {
+        padding-top: 50px;
+        padding-left: 39px;
+        display: block;
+    }
+
+    section#body {
+        display: block;
+        background: #121725;
+        width: 635px;
+        margin-left: 39px;
+        margin-top: 152px;
+        padding-top: 93px;
+        text-align: left;
+    }
+
+    section#body h1 {
+        font-size: 48px;
+        line-height: 56px;
+        margin-bottom: 31px;
+    }
+
+    section#body p.desc {
+        font-size: 18px;
+        line-height: 28px;
+        width: 445px;
+    }
+
+    .bottom-body {
+        margin-top: 40px;
+        width: 536px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    /* FORM */
+    .bottom-body form#form-mail {
+        margin-bottom: 64px;
+    }
+
+    .bottom-body .form-group {
+        display:flex;
+        flex-direction:row;
+        background: #2C344B;
+        width: 427px;
+        padding: 5px;
+        border-radius: 28px;
+    }
+    .form {
+        margin-top: 0;
+    }
+    .form input[type=text] {
+        background: transparent;
+        margin-bottom: 0;
+    }
+
+    .img-svg .spotify {
+        width: 96px;
+        height: 29px;
+    }
+    
+    .img-svg .apple {
+        width: 78px;
+        height: 29px;
+    }
+    
+    .img-svg .google {
+        width: 125px;
+        height: 18px;
+    }
+    
+    .img-svg .pocket {
+        width: 129px;
+        height: 26px;
+    }
+
+    footer img.svg-dots {
+        display: block;
+    }
+}
+
+
+/* ######################################## */
+/*                  Desktop                 */
+/* ######################################## */
+@media (min-width: 1440px) {
+    body {
+        background: url('../assets/desktop/image-host.jpg') no-repeat top 130px right, #121725 ;
+    }
+
+    header {
+        padding-top: 102px;
+        padding-left: 165px;
+    }
+
+    section#body {
+        margin-left: 165px;
+        margin-top: 103px;
+        padding-top: 88px;
+        width: 723px;
+    }
+
+    section#body h1 {
+        font-size: 52px;
+        line-height: 62px;
+        margin-bottom: 24px;
+    }
+
+    footer {
+        position: relative;
+    }
+
+    footer img.svg-dots {
+        position: absolute;
+        right: 0;
+        top: -208px;
+    }
+}

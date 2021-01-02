@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+  <link rel="stylesheet" href="style/style.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Pod request access landing page</title>
+
+  <script src="./script/checkMail.js" defer></script>
+</head>
+<body>
+<div class="my-body">
+  <header>
+    <img src="./assets/svg/logo.svg" alt="logo">
+  </header>
+
+  <section id="body">
+    <h1><span class="green-text">publish your podcasts</span><br />everywhere.</h1>
+    <p class="desc">
+      Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, 
+      Apple Podcasts, Google Podcasts, Pocket Casts and more!
+    </p>
+
+    <div class="bottom-body">
+      <div class="img-svg">
+        <img class="spotify" src="./assets/svg/spotify.svg" alt="Spotify">
+        <img class="apple" src="./assets/svg/apple-podcast.svg" alt="Apple Podcasts">
+        <img class="google" src="./assets/svg/google-podcasts.svg" alt="Google Podcasts">
+        <img class="pocket" src="./assets/svg/pocket-casts.svg" alt="Pocket Cats">
+      </div>
+      <div class="form">
+        <form id="form-mail">
+          <div class="form-group">
+            <input type="text" name="mail" id="mail" placeholder="Email adress">
+            <input type="submit" value="Request Access" >
+          </div>
+          <span id="error-msg">0</span>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <img src="./assets/svg/bg-pattern-dots.svg" alt="bg-pattern-dots" class="svg-dots">
+  </footer>
+
+</div>
+</body>
+</html>
