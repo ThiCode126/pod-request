@@ -81,7 +81,7 @@ section#body p.desc {
 .form {
     margin-top: 48px;
 }
-.form input[type=text], .form input[type=submit] {
+.form input[type=email], .form input[type=submit] {
     width: 100%;
     border: none;
     height: 46px;
@@ -90,12 +90,13 @@ section#body p.desc {
     font-weight: 700;
     font-size: 14px;
 }
-.form input[type=text] {
+.form input[type=email] {
     background: #2C344B;
     padding-left: 32px;
+    width: calc(100% - 32px);
     color: #FFF;margin-bottom: 16px;
 }
-.form input[type=text]:active, .form input[type=text]:focus {
+.form input[type=email]:active, .form input[type=email]:focus {
     color: #FFF;
 }
 .form input[type=submit] {
@@ -185,7 +186,7 @@ footer img.svg-dots {
     .form {
         margin-top: 0;
     }
-    .form input[type=text] {
+    .form input[type=email] {
         background: transparent;
         margin-bottom: 0;
     }
